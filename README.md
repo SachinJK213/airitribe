@@ -70,9 +70,9 @@ curl --location "localhost:3000/tasks/priority/high"
 curl --location 'localhost:3000/tasks' \
 --header 'Content-Type: application/json' \
 --data '{
-    "id": "21",
+    "id": 21,
     "title": "Assignemnt",
-    "description": "Assignemnt of task manager",
+    "description": "Assignment of task manager",
     "completed": true
 }'
 ```
@@ -89,8 +89,8 @@ curl --location --request DELETE "localhost:3000/tasks/2"
 curl --location --request PUT 'localhost:3000/tasks/20' \
 --header 'Content-Type: application/json' \
 --data '{
-    "title": "Create test course for assignement",
-    "description": "created a cource for first assignemtn",
+    "title": "Create test course for assignment",
+    "description": "created a cource for first assignment",
     "completed": true,
     "priority": "high"
   }'
